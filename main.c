@@ -3,17 +3,32 @@
 
 int main()
 {
-    double area ;
-    const double Pi = 3.142;
-    double radius;
-    char userName[50];
-    printf("Please enter your username\n");
-    scanf("%s",userName);
-    printf("Hello %s",userName);
-    printf("Please enter radius\n");
-    scanf("%lf",&radius);
-    area= Pi*radius*radius;
-    printf("The area of the circle is %lf",area);
+   double num1;
+   double num2;
+   char ope;
 
-return 0;
+   printf("Enter a number:");
+   scanf("%lf",&num1);
+   printf("Enter an operator:");
+   scanf(" %c",&ope);
+   printf("Enter a number:");
+   scanf("%lf",&num2);
+
+   if(ope =='+'){
+    printf("%f",num1 + num2);
+   }
+    else if(ope == '-'){
+        printf("%f",num1 - num2);
+    }
+    else if(ope == '/'){
+        printf("%f",num1 / num2);
+    }
+    else if(ope == '*'){
+        printf("%f",num1*num2);
+    }
+    else printf("Invalid operator");
+
+
+
+    return 0;
 }
